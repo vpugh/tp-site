@@ -1,0 +1,131 @@
+.hero.project {
+	padding: 8% 0 5% 0;
+}
+.grid {
+	padding: 0 5%;
+	margin: 40px auto 20px auto;
+	text-align: center;
+	background: #EFEFEF;
+	&-item {
+		margin-bottom: 1em;
+		@include tablet {
+			margin: 3em 0;
+		}
+		@include desktop {
+			margin: 3em 0;
+		}
+		&.text-after {
+			margin-bottom: 0;
+		}
+	}
+	&:after, &::before {
+	    display: table;
+	    content: "";
+	}
+}
+.half-image {
+	overflow: hidden;
+	img {
+		@include desktop {
+			width: 49.5%;
+			float: left;
+			&:first-child {
+				margin-right: 1%;
+			}
+		}
+	}
+}
+.work-top {
+	padding: 30px 0;
+
+	@include tablet {
+		padding: 50px 0;
+	}
+	@include desktop {
+		padding: 50px 0;
+	}
+}
+.project--title {
+
+	font-size: 2rem;
+	color: #fff;
+	margin: 0;
+    padding: 10px 0;
+    line-height: 1.2em;
+
+	@include tablet {
+		font-size: 2.75rem;
+		padding: 10px 60px;
+		line-height: 1.35em;
+	}
+}
+.project--subheads {
+
+	@include desktop {
+
+		margin-top: .5em;
+		margin-bottom: 1em;
+	}
+
+	font-weight: 500;
+	overflow: hidden;
+	text-align: left;
+	border-bottom: 2px solid #efefef;
+	padding-bottom: 2.5em;
+
+	div {
+
+		display: block;
+		float: left;
+		margin-right: 25px;
+		font-size: 1.05rem;
+		width: 30%;
+	}
+    span {
+
+	    font-weight: 600;
+	    display: block;
+	    font-size: 1.3rem;
+    }
+}
+.project--image {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+.subhead {
+    font-size: 26px;
+    margin: 2em 0 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.full-image {
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
+.text.container:last-child {
+	padding-bottom: 60px;
+}
+.text p.disclaimer {
+	margin-top: 2em;
+	font-size: 1em;
+	font-style: italic;
+}
+.quote {
+	font-size: 48px;
+	padding: 0 12vw
+	;
+	line-height: 1.2;
+	font-weight: 100;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3.5rem;
+	margin-top: 2rem;
+}
+.prototype--link {
+	display: inline-block;
+	&:after {
+		content: '';
+		margin-right: 10px;
+	}
+}

@@ -1,0 +1,8 @@
+.DS_Store
+/dist
+/node_modules
+/app/images
+/app/fonts
+/**/_notes/dwsync.xml
+/app/prototype
+/New Folder With Items/
