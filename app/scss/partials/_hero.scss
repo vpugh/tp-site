@@ -36,11 +36,9 @@
 		@include large-desktop {
 		}
 		#about & {
-			margin: 0;
 			@include large-desktop {
 				font-size: 3.6rem;
 				padding: 10px 60px;
-				margin-bottom: 0;
 			}
 		}
 	}	
