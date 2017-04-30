@@ -1,0 +1,71 @@
+{% extends "third-layout.njk" %}
+{# {% extends "secondary-layout.njk" %} #}
+
+{% block title %}About Me — {% endblock %}
+
+{% block bodyid %}
+{% set activePage = "about" %}
+{% endblock %}
+
+{% block hero %}
+<section class="hero">
+	<div class="container">
+		<h2 class="hero--title">Driven by curiosity, a desire to learn, and making things work better.</h2>
+		<a href="tori-resume.pdf" class="btn block download">Download Resume</a>
+	</div>
+</section>
+{% endblock %}
+
+{% block content %}
+<main>
+	<section class="blurb" id="about">
+		<h2 class="quote">
+			I'm unsure of what title I should use but not the work I do. I create solutions, code stuff, and design things.
+		</h2>
+		<div class="text container">
+			<h3 class="intro">
+				 I endeavor to listen and understand the problem, through research identify or confirm the problem, and then come up with solutions to rectify them. These solutions can be through design and/or development.
+			</h3>
+			{# <h3>My Career Path</h3> #}
+			<p>
+				I began working in print as a graphic designer. I was taught that design is more then “making it pretty”, it is the culmination of creating and executing a solution; understanding your audience and their needs; and solving problems using critical thinking skills. This combination of design-thinking and execution is what I find most enjoyable and rewarding.
+			</p>
+			<p>
+				Then I learned some HTML &amp; CSS and decided to learn how to code more seriously. I combined my print skills and knowledge and started doing designs aimed at web and app design. With my inclination for digital design and coding this left me straddling the design and development line in an ever growing digital landscape.
+			</p>
+			{# <h3>My Passion</h3>	 #}
+			<p>
+				My greatest asset is my passion for learning, which is due in great part to my never-ending curiosity about how things work. I can learn new techniques or programs at an amazing speed, getting too obsessed at times. I take great enjoyment in trying to find more efficient ways to create things and looking into new technologies. I'm always looking to expand my knowledge through online learning, taking classes, going to conferences, or reading articles.
+			</p>
+			
+			 
+			<h3>Skillset</h3>
+			<p><strong>Development:</strong><br>
+			HTML, CSS(SASS), jQuery, Git, Gulp, Node.js, HTML Emails, Vue.js</p>
+			<p><strong>Design</strong><br>
+			Responsive Web Design, UX/UI, Interaction Design, Typography, Branding, Prototyping, Email Design, Design Strategy</p>
+			<p><strong>Tools</strong><br>
+			Sketch, Photoshop, Illustrator, InDesign, Dreamweaver, Coda, Sublime Text, MailChimp, GitHub, Bootstrap</p>
+			{# <div class="skillset">
+				<h4>Development</h4>
+				<p>HTML, CSS(SASS), jQuery, Git, Gulp, Node.js, HTML Emails</p>
+				<h4>Design</h4>
+				<p>Responsive Web Design, UX/UI, Interaction Design, Typography, Branding, Prototyping, Email Design, Design Strategy</p>
+				<h4>Tools</h4>
+				<p>Sketch, Photoshop, Illustrator, InDesign, Dreamweaver, Coda, Sublime Text, MailChimp, GitHub, Bootstrap</p>
+			</div> #}
+			{# <p>
+				HTML, CSS, SCSS, jQuery, Responsive Web Design, UX, Interaction Design, Typography, Branding, Sketch, Photoshop, Illustrator, InDesign, Dreamweaver, Coda, Sublime Text, Git, Bootstrap, Gulp, Node.js
+			</p> #}
+			{# <h3>Past Clients/Employers</h3>
+			<p>
+				PHH Mortgage, The American School of Physicians, Lenox Inc., Saint Joseph’s University, AKA By Design, United Nations, AEGIS Communications and Dental Learning Systems.
+			</p> #}
+			<h3>Staying Connected</h3>
+			<p>
+				I like to share info and interact on <a href="https://twitter.com/teekatwo" target="_blank">Twitter</a>. Get inspiration and share my projects on <a href="https://dribbble.com/teekatwo" target="_blank">Dribbble</a>. Tinker and learn new code on <a href="http://codepen.io/Vpugh/" target="_blank">Codepen</a>. Working on side projects on <a href="https://github.com/vpugh" target="_blank">Github</a>. In my spare-time, I'm an avid reader with a ever-growing backlog of books or trying to get through my game collection for the PS4. 
+			</p>
+		</div>
+	</section>
+</main>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "secondary-layout.njk" %}
+
+{% block title %}Interstice - Theme {% endblock %}
+
+{% block bodyid %}
+{% set activePage = "work" %}
+{% endblock %}
+
+{% block hero %}
+<div class="colored">
+<section class="hero project bg-img" style="background-image: url('../images/gallery/interstice/window-1.jpg')">
+	{# <div class="container">
+		<h2 class="project--title">New and Modern Look for Dental Education Site</h2>
+		<h3>Redesigning to Improve User-Experience and Interface Usage</h3>
+	</div> #}
+</section>
+</div>
+{% endblock %}
+
+{% block content %}
+<main>
+	<section class="work-top">
+		<div class="text container project--subheads">
+			<div>
+				<span>Role:</span> 
+				Designer, Developer
+			</div>
+			<div>
+				<span>Type of Work:</span>
+				Web Design, Web Development, Theme
+			</div>
+			<div>
+				<span>Client:</span> 
+				Side Project
+			</div>
+		</div>
+	</section>
+	<div class="text container">
+		<h3 class="subhead">Simple, Minimalist, and Clean Theme</h3>
+		<p>
+			I was inspired to make this theme from seeing the background on another site. I wanted to figure out how the half image/half scroll worked, so what better way then to make a theme with it. I kept the design minimalist, with a mix of serif and san-serif for a change of pace. The theme would be full customisable, you can change the image, the colors, fonts and the icon.
+		</p>
+		<p>
+			<a class="h-r-arrow" href="http://interstice-theme.tumblr.com/" target="_blank">Site Link</a>
+		</p>
+	</div>
+	<div class="full-image grid-item image-padding">
+		<img src="../images/gallery/interstice/window-1.jpg" alt="">
+		<img src="../images/gallery/interstice/window-2.jpg" alt="">
+		<img src="../images/gallery/interstice/window-3.jpg" alt="">
+	</div>
+</main>
+{% endblock %}

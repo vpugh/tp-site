@@ -104,7 +104,7 @@ $mobile: 100%;
     }
   }
 
-@include tablet{
+@include tablet {
   @for $i from 1 to ($columns + 1)
   {
     // Calculate grid size in pixels
@@ -117,7 +117,7 @@ $mobile: 100%;
      }
    }
 }
-@include desktop{
+@include desktop {
   @for $i from 1 to ($columns + 1)
   {
     // Calculate grid size in pixels

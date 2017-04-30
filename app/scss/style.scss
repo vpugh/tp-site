@@ -14,21 +14,22 @@
 
 .text {
     @include desktop {
-	    max-width: 800px;
+	    max-width: 650px;
     }
     p {
-
-	    #about & {
-		    margin-top: 0;
+		#home &{
+	    	margin-bottom: 1.2em;
 	    }
-
+	    #about & {
+		    margin-bottom: 1.4em;
+	    }
+		margin-top: 1em;
 	    font-size: 1em;
 	    line-height: 1.3em;
 	    color: #555;
-	    
 	    @include desktop {
-		   font-size: 1.2em;
-		   line-height: 1.45em;
+		   font-size: 1.1em;
+		   line-height: 1.6;
 	    }
 	}
 	a:hover:not(.btn) {
@@ -36,6 +37,18 @@
 	}
 	h2 {
 		line-height: 1.3;
+		margin-bottom: 1rem;
+	}
+	#home h3 {
+		margin-top: 0;
+		margin-bottom: .75rem;
+	}
+	.intro {
+		font-size: 1.6rem;
+		line-height: 1.4;
+		max-width: 650px;
+		margin: 30px auto 60px auto;
+		// text-align: center;
 	}
 }
 .blurb {
@@ -72,4 +85,28 @@
 }
 .text-subhead {
 	margin: 1em 0 .25em 0;
+}
+
+.skillset {
+	// padding: 10px 30px;
+	// background-color: #efefef;
+	// margin-bottom: 2.2rem;
+	padding: 1.2rem 0 2.2rem 0;
+	h4 {
+		margin-top: 0;
+		margin-bottom: 5px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: .86em;
+	}
+	p {
+	    margin-bottom: .75em !important;
+	}
+}
+
+.playground {
+	padding: 60px 0;
+}
+.pen {
+	padding: 40px 0;
 }

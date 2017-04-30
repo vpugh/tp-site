@@ -42,7 +42,7 @@ jQuery(document).ready(function(){
         });
 			
 		
-		var offset = 300,
+		var offset = 700,
     offset_opacity = 1200,
     scroll_top_duration = 700,
     $back_to_top = $('.sttop');

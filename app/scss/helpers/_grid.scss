@@ -1,0 +1,71 @@
+@import "variables_breakpoints";
+
+//# of Columns
+$columns: 12;
+// XLarge Values
+$largeColumn-width: 80px;
+$largeGutter: 20px;
+// Large Values
+$xlargeColumn-width: 98px;
+$xlargeGutter: 24px;
+// Medium Values
+$mediumGutter: 20px;
+$mediumColumn-width: 60px;
+$mediumPadding: $mediumGutter / 2;
+// Small Values
+$smallGutter: 12px;
+$smallColumn-width: 52px;
+$smallPadding: $smallGutter / 2;
+
+@mixin width($column-width, $gutter-width, $columns, $adjust: 2, $width-adjustment:""){
+	$true: 1;
+  $width: (($column-width + $gutter-width) * ($columns - 1));
+  @if ($adjust == $true) { 
+	  width: calc( #{$width} - #{$width-adjustment}); 
+	  } @else {
+		  width: $width;
+	  }
+}
+
+.container {
+	margin: 0 auto;
+	&:after,
+	&:before {
+		display: table;
+	  	content: "";
+	}
+	@include respond-to(xxsmall, max-width) {
+      width: 80%;
+  }
+	@include respond-to(xsmall, max-width) {
+      width: 80%;
+  }
+	@include respond-to(small, min-width) {
+      @include width($smallColumn-width, $smallGutter, 12);
+  }
+	@include respond-to(medium, min-width) {
+      @include width($mediumColumn-width, $mediumGutter, 12);
+  }
+	@include respond-to(large, min-width) {
+      @include width($largeColumn-width, $largeGutter, 12);
+  }
+	@include respond-to(xlarge, min-width) {
+      @include width($xlargeColumn-width, $xlargeGutter, 12);
+  }
+}
+
+// Columns Creations 
+
+// Extended properties for Columns
+%col {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+@for $i from 1 to ($columns + 1)
+  {
+    .col#{$i} {
+      @extend %col;
+    }
+  }

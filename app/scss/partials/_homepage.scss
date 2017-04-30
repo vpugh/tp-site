@@ -1,13 +1,18 @@
 main {
-	padding: 25px 0;
+	//padding: 25px 0;
 	position: relative;
 	background-color: #fff;
-	@include tablet {
-		padding: 70px 0;
+	#design &,
+	#development &,
+	#work & {
+		padding-bottom: 60px;
 	}
-	@include desktop {
-		padding: 40px 0;
-	}
+	// @include tablet {
+	// 	padding: 70px 0;
+	// }
+	// @include desktop {
+	// 	padding: 40px 0;
+	// }
 	#about &, &.colored {
 		padding: 0;
 	}
@@ -19,19 +24,28 @@ main {
 	font-size: 18px;
 	margin-bottom: 36px;
 }
-#home-portfolio {
+.home-portfolio {
 	max-width: 94%;
-	width: 100%;
-	margin: 0 auto;
+	width: 90%;
+	margin: 40px auto;
+	overflow: hidden;
+	padding-top: 40px;
 }
 .featured-image {
 	position: relative;
 	overflow: hidden;
 	line-height: 0;
 	width: 100%;
+	// a {
+	// 	display: inline-table;
+	// }
 	@include tablet {
-		width: 50%;
+		width: 48%;
 		float: left;
+		margin-bottom: 4%;
+		&:nth-child(odd) {
+			margin-right: 4%;
+		}
 	}
 	&--text {
 		padding-top: 24px;
@@ -65,10 +79,11 @@ main {
 	opacity: 1;
 }
 .featured-text {
-	padding: 0 60px;
+	padding: 0 30px;
 	flex: 1;
 	margin-top: auto;
 	margin-bottom: auto;
+	text-align: center;
 	h2 {
 		font-size: 24px;
 		margin-bottom: .25em;
@@ -78,7 +93,7 @@ main {
 			font-size: 38px;
 		}
 		@include desktop {
-			font-size: 44px;
+			font-size: 30px;
 		}
 	}
 	h3 {
@@ -89,7 +104,7 @@ main {
 			font-size: 18px;
 		}
 		@include desktop {
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}
 }
