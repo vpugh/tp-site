@@ -1,75 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>About Me — Developer • Designer | Tori Pugh</title>
-	<link rel="icon" href="images/icon-desktop.png">
-	<link rel="icon" href="images/icon-app.png" sizes="192x192">
-	<link rel="shortcut icon" href="images/icon-desktop.png">
-	<link rel="apple-touch-icon" href="images/icon-app.png">
-	<link rel="apple-touch-icon-precomposed" href="images/icon-app.png">
-	
-	<!--build:css css/styles.min.css-->
-	<link rel="stylesheet" href="css/style.css">
-	<!--endbuild-->
-	
-	
-	<script rel="preload" src="https://use.typekit.net/nvf8ecr.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	
-</head>
-	
+{% extends "layout.njk" %}
+{# {% extends "secondary-layout.njk" %} #}
 
+{% block title %}About Me — {% endblock %}
 
-	
-	
+{% block bodyid %}
+{% set activePage = "about" %}
+{% endblock %}
 
-
-<body id="about">
-
-
-
-	<header>
-	<div class="gradient-border"></div>
-	<div class="navigation">
-		<div class="container">
-			<nav class="navigation--social">
-				<ul>
-					<li><a href="https://twitter.com/teekatwo" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="http://codepen.io/Vpugh/" target="_blank" title="Codepen"><i class="fa fa-codepen"></i></a></li>
-					<li><a href="https://dribbble.com/teekatwo" target="_blank" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
-					<li><a href="https://github.com/vpugh" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
-				</ul>
-			</nav>
-			<ul class="navigation--links">
-				<li class="nav--link "><a class="smoothScroll" href="/#design">Work</a></li>
-				<li class="nav--link  active "><a href="/about">About</a></li>
-				<li class="nav--link"><a href="mailto:hello@toripugh.com">Contact</a></li>
-			</ul>
-			<a class="nav-trigger" href="javascript:void(0);">
-		        <span class="cd-icon"></span>
-		    </a>
-		</div>
-	</div>
-</header>
-	
+{% block hero %}
 <section class="hero">
 	<div class="container">
 		<h2 class="hero--title">Driven by curiosity, a desire to learn, and making things work better.</h2>
 		<a href="tori-resume.pdf" class="btn block base download">Download Resume</a>
 	</div>
 </section>
+{% endblock %}
 
-	
+{% block content %}
 <main>
 	<section class="blurb">
-		
-		
+		{# <h2 class="quote">
+			I'm unsure of what title I should use but not the work I do. I create solutions, code stuff, and design things.
+		</h2> #}
+		{# <h2 class="quote">While I’m not sure what title I should use, I do know what kind of work I do. Developing solutions that are user-friendly and make better products and services.</h2> #}
 		<h2 class="quote">I listen to understand a problem, do research to identify and/or confirm it, and then create solutions for them.</h2>
 		<div class="text container">
 		<div class="left-main">
-			
+			{# <h3 class="intro">
+				 I endeavor to listen and understand the problem, through research identify or confirm the problem, and then come up with solutions to rectify them. These solutions can be through design and/or development.
+			</h3> #}
 			<p>
 				I’m a developer/designer based out of Philadelphia, with a passion and love for creating products that put users first. Using thoughtful research and design thinking, I have a desire to fix processes and make products and services run smoother and easier for the user.
 			</p>
@@ -87,7 +46,7 @@
 			</p>
 		</div>
 		<div class="right-sidebar">
-			
+			{# <h3>Skillset</h3> #}
 			<p><strong>Development:</strong><br>
 			HTML, CSS, SASS, jQuery, Git, Gulp, Node.js, HTML Emails, <span class="learning">Vue.js</span>, <span class="learning">React.js</span>, <span class="learning">Wordpress</span></p>
 			<p><strong>Design</strong><br>
@@ -101,49 +60,26 @@
 			
 			 
 			
-			
-			
-			
-			
+			{# <div class="skillset">
+				<h4>Development</h4>
+				<p>HTML, CSS(SASS), jQuery, Git, Gulp, Node.js, HTML Emails</p>
+				<h4>Design</h4>
+				<p>Responsive Web Design, UX/UI, Interaction Design, Typography, Branding, Prototyping, Email Design, Design Strategy</p>
+				<h4>Tools</h4>
+				<p>Sketch, Photoshop, Illustrator, InDesign, Dreamweaver, Coda, Sublime Text, MailChimp, GitHub, Bootstrap</p>
+			</div> #}
+			{# <p>
+				HTML, CSS, SCSS, jQuery, Responsive Web Design, UX, Interaction Design, Typography, Branding, Sketch, Photoshop, Illustrator, InDesign, Dreamweaver, Coda, Sublime Text, Git, Bootstrap, Gulp, Node.js
+			</p> #}
+			{# <h3>Past Clients/Employers</h3>
+			<p>
+				PHH Mortgage, The American School of Physicians, Lenox Inc., Saint Joseph’s University, AKA By Design, United Nations, AEGIS Communications and Dental Learning Systems.
+			</p> #}
+			{# <h3>Staying Connected</h3>
+			<p>
+				I like to share info and interact on <a href="https://twitter.com/teekatwo" target="_blank">Twitter</a>. Get inspiration and share my projects on <a href="https://dribbble.com/teekatwo" target="_blank">Dribbble</a>. Tinker and learn new code on <a href="http://codepen.io/Vpugh/" target="_blank">Codepen</a>. Working on side projects on <a href="https://github.com/vpugh" target="_blank">Github</a>. In my spare-time, I'm an avid reader with a ever-growing backlog of books or trying to get through my game collection for the PS4. 
+			</p> #}
 		</div>
 	</section>
 </main>
-
-	<a href="#0" class="sttop is-visible"><span class="sr-only">Back to Top</span>Top</a>
-<div id="footer">
-	<div class="container">
-		<nav>
-			<ul class="email-footer">
-				<li><a href="mailto:hello@toripugh.com" target="_blank" title="hello@toripugh.com">hello@toripugh.com</a></li>
-			</ul>
-			<ul class="social-footer">
-				<li><a href="https://twitter.com/teekatwo" target="_blank" title="Twitter">Twitter</a></li>
-				<li><a href="https://dribbble.com/teekatwo" target="_blank" title="Dribbble">Dribbble</a></li>
-				<li><a href="http://codepen.io/Vpugh/" target="_blank" title="Codepen">Codepen</a></li>
-				<li><a href="https://github.com/vpugh" target="_blank" title="Github">Github</a></li>
-			</ul>
-		</nav>
-		<p class="copyright">
-			© <script type="text/javascript">document.write(new Date().getFullYear());</script>  Victoria Pugh. All Rights Reserved.
-		</p>
-	</div>
-</div>
-	
-	<script src="js/jquery.min.js"></script>
-	<!--build:js js/main.min.js -->
-	<script src="js/lazysizes.min.js"></script>
-	<script src="js/scripts.js"></script>
-	<!-- endbuild -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-77179004-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
-	
-</body>
-</html>
+{% endblock %}

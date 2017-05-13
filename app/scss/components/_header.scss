@@ -1,0 +1,105 @@
+// @import "helpers/media-query";
+@import "helpers/animations";
+
+header {
+	position: relative;
+}
+
+.gradient-border {
+    background: #ff9600;
+    background: -moz-linear-gradient(left, #ff9600 0%, #8ac641 50%, #00c7ff 100%);
+    background: -webkit-linear-gradient(left, #ff9600 0%, #8ac641 50%, #00c7ff 100%);
+    background: linear-gradient(to right, #ff9600 0%, #8ac641 50%, #00c7ff 100%);
+    height: 16px;
+}
+
+.navigation {
+	padding: 66px 0;
+	&--links {
+		@include breakpoint(tablet, min-width) {
+			padding-left: 84px;
+			float: left;
+		}
+		@include breakpoint(desktop, min-width) {
+			padding-left: 81px;
+			
+		}
+		@include breakpoint(xldesktop, min-width) {
+			padding-left: 221px;
+		}
+		@include breakpoint(tablet, max-width) {
+			text-align: center;
+		}
+		@include breakpoint(tablet, min-width) {
+			display: block;
+		}
+		
+		// Mobile Menu Slide Open
+		
+		&.menu-is-open {
+	    z-index: 4;
+	    -webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transform: translateX(0);
+		}
+	}
+	
+	.nav--link {
+		display: inline-block;
+		padding-right: 24px;
+		letter-spacing: 1.25px;
+		@include breakpoint(desktop, min-width) {
+			font-size: 1rem;
+		}
+		@include breakpoint(xldesktop, min-width) {
+			font-size: 1.2rem;
+		}
+		&:not(:first-child) {
+			padding: 0 12px;
+		}
+		a {
+			border-bottom: 2px solid transparent;
+			padding-bottom: 2px;
+			&:hover,
+			.active {
+				border-color: #4a4a4a;
+				transition: ease-out 300ms;
+			}
+		}
+	}
+	
+	// Social Icons in the Header
+	
+	&--social {
+		@include breakpoint(mobile, max-width) {
+			display: none;
+		}
+		@include breakpoint(tablet, min-width) {
+			padding-right: 84px;
+			float: right;
+		}
+		@include breakpoint(desktop, min-width) {
+			padding-right: 81px;
+		}
+		@include breakpoint(xldesktop, min-width) {
+			padding-right: 221px;
+		}
+		
+		font-size: 24px;
+		padding: 0;
+		margin: 0;
+		
+		li {
+			display: inline-block;
+			padding: 0 12px;
+		}
+		.fa:hover {
+			color: #A1A1A1;
+			#work & {
+				color: rgba(#fff, .5);
+			}
+		}
+	}	
+}

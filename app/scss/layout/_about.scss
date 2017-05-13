@@ -1,0 +1,62 @@
+#about main {
+	background-color: #fff;
+	padding: 6rem 0;
+}
+.left-main {
+	width: 100%;
+	@include breakpoint(tablet, min-width) {
+		float: left;
+		width: 60%;
+		padding-left: 84px;
+	}
+	@include breakpoint(desktop, min-width) {
+		padding-left: 81px;
+	}
+	@include breakpoint(xldesktop, min-width) {
+		width: 58%;
+		padding-left: 226px;
+	}
+}
+.right-sidebar {
+	width: 100%;
+	@include breakpoint(tablet, min-width) {
+		float: right;
+		width: 30%;
+		padding-right: 64px;
+	}
+	@include breakpoint(desktop, min-width) {
+		padding-right: 81px;
+	}
+	@include breakpoint(xldesktop, min-width) {
+		width: 30%;
+		padding-right: 81px;
+	}
+}
+.text {
+	p {
+		margin-bottom: 1.3em;
+	}
+	a {
+		border-bottom: 2px solid color(text, base);
+		transition: border 300ms ease-out;
+		&:hover {
+			border-color: transparent;
+		}
+	}
+}
+.learning {
+	&:before,
+	&::before {
+		content: "*";
+		color: red;
+	}
+	&--text {
+		font-size: .6em;
+		color: red;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@include breakpoint(tablet, max-width) {
+			line-height: 1.5rem;
+		}
+	}
+}

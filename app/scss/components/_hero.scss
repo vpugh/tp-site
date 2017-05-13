@@ -1,0 +1,102 @@
+// @import "variables/breakpoints";
+
+.hero {
+	
+	
+	&--title {
+		
+		line-height: 1.333;
+		
+		@include breakpoint(tablet, min-width) {
+			font-size: 2.2rem;
+			padding-left: 84px;
+			padding-right: 84px;
+		}
+		
+		@include breakpoint(desktop, min-width) {
+			font-size: 42px;
+			padding-left: 81px;
+			padding-right: 81px;
+		}
+		
+		@include breakpoint(xldesktop, min-width) {
+			font-size: 56px;
+			padding-left: 221px;
+			padding-right: 221px;
+		}
+	}
+	
+	
+	&--subtitle {
+		
+		font-weight: 400;
+		padding-top: 1rem;
+		line-height: 1.4;
+		
+		@include breakpoint(tablet, min-width) {
+			
+			padding-left: 84px;
+			padding-right: 84px;
+		}
+		
+		@include breakpoint(desktop, min-width) {
+			
+			padding-left: 81px;
+			padding-right: 81px;
+			font-size: 24px;
+		}
+		
+		@include breakpoint(xldesktop, min-width) {
+			
+			font-size: 30px;
+			padding-top: 2rem;
+			font-size: 32px;
+			padding-left: 221px;
+			padding-right: 221px;
+		}
+	}
+}
+
+#home .hero {
+	
+	padding: 0 0 4rem 0;
+	
+	@include breakpoint(tablet, min-width) {
+		
+		padding: 3rem 0 6rem 0;
+	}
+}
+
+#about .hero {
+	
+	text-align: center;
+	padding: 0 0 6rem 0;
+	
+	@include breakpoint(tablet, min-width) {
+		
+		padding: 3rem 0 6rem 0;
+	}
+	
+	.hero--title {
+		padding-bottom: 3rem;
+	}
+}
+
+#work .hero {
+	
+	text-align: center;
+	padding: 0 0 5rem 0;
+	
+	@include breakpoint(tablet, min-width) {
+		
+		padding: 3rem 0 8rem 0;
+	}
+	
+	@include breakpoint(desktop, min-width) {
+		
+		.container {
+			padding-left: 81px;
+			padding-right: 81px;
+		}
+	}
+}

@@ -1,0 +1,46 @@
+$green:  #8AC641;
+$orange: #FF9600;
+$blue: #00C7FF;
+$background-base: #efefef;
+$text-base: #555;
+
+$colors: (
+	background: (
+		base: $background-base,
+		light: lighten($background-base, 15%),
+		dark: darken($background-base, 15%),
+		white: #fff
+	),
+	text: (
+		base: $text-base,
+		light: lighten($text-base, 15%),
+		dark: darken($text-base, 15%),
+		white: #fff
+	),
+	orange: (
+		base: $orange,
+		light: lighten($orange, 15%),
+		dark: darken($orange, 15%),
+		trans: transparentize($orange, 0.5)
+	),
+	blue: (
+		base: $blue,
+		light: lighten($blue, 15%),
+		dark: darken($blue, 15%),
+		trans: transparentize($blue, 0.5)
+	),
+	green: (
+		base: $green,
+		light: lighten($green, 15%),
+		dark: darken($green, 15%),
+		trans: transparentize($green, 0.5)
+	)
+);
+
+@function color($color-name, $color-variant:null) {
+  @if ($color-variant != null) {
+    @return map-get(map-get($colors, $color-name), $color-variant);
+  } @else {
+    @return map-get($colors, $color-name);
+  }
+}

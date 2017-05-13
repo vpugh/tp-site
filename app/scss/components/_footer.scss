@@ -1,0 +1,91 @@
+#footer {
+	padding-top: 40px;
+	text-align: center;
+	color: color(text, white);
+	
+	ul {
+		margin: 0;
+		padding: 0; 
+		display: inline-block;
+	}
+	
+	li {
+		display: inline-block;
+		list-style: none;
+	}
+	
+	a {
+		padding: 0 16px;
+	}
+	
+	@include breakpoint(mobile, max-width) {
+		
+		ul {
+			width: 100%;
+		}
+		li {
+			display: block;
+			width: 100%;
+			padding: 15px 0;
+		}
+	}
+}
+.social-footer {
+	
+	&:before {
+		content: "|";
+		padding: 0 4px;
+		display: inline-block;
+	}
+	
+	@include breakpoint(tablet, max-width) {
+		&:before {
+			content: "";
+			height: 0;
+			padding: 0;
+		}
+	}
+}
+
+.email-footer,
+.social-footer {
+	font-size: 1.1rem;
+	@include breakpoint(desktop, min-width) {
+		font-size: 1rem;
+	}
+	letter-spacing: 1px;
+	
+	a {
+		transition: opacity 400ms ease-out;
+		&:hover {
+			opacity: .5;
+		}
+	}
+}
+
+#footer .email-footer a {
+	
+	@include breakpoint(mobile, max-width) {
+		border: 1px solid #fff;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+
+.copyright {
+	
+	padding: 8px 0 24px 0;
+	letter-spacing: 1px;
+	font-size: .8rem;
+	
+	@include breakpoint(desktop, min-width) {
+		font-size: 12px;
+	}
+}
+
+nav {
+	
+	@include breakpoint(tablet, max-width) {
+		padding-bottom: 20px;
+	}
+}

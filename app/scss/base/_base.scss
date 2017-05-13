@@ -1,0 +1,70 @@
+@import "variables/typography";
+@import "helpers/colorMap";
+
+body {
+	font-family: "canada-type-gibson", $sans-serif;
+	// font-size: 20px;
+	// line-height: 1.5;
+	font-size: calc(16px + (22 - 16) * (100vw - 320px)/(1440 - 320));
+  	line-height: calc(1.5em + (1.3 - 1.5) * (100vw - 320px)/(1440 - 320));
+	// background-color: #EFEFEF;
+	background: color(background, base);
+	// color: #4A4A4A;
+	color: color(text, base);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+.blue {
+	main {
+		background-color: color(blue, light);
+	}
+	#footer {
+		background-color: color(blue, base);
+	}
+	.hover {
+		background-color: color(blue, trans);
+	}
+}
+.orange {
+	main {
+		background-color: color(orange, light);
+	}
+	#footer {
+		background-color: color(orange, base);
+	}
+	.hover {
+		background-color: color(orange, trans);
+	}
+}
+.green {
+	main {
+		background-color: color(green, light);
+	}
+	#footer {
+		background-color: color(green, base);
+	}
+	.hover {
+		background-color: color(green, trans);
+	}
+}
